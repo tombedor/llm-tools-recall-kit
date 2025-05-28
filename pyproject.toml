@@ -1,0 +1,28 @@
+[project]
+name = "llm-tools-recall-kit"
+version = "0.1"
+description = "A set of functions to add memory to LLM's"
+readme = "README.md"
+authors = [{name = "Tom Bedor"}]
+license = "Apache-2.0"
+classifiers = []
+requires-python = ">=3.9"
+dependencies = [
+    "llm>=0.26"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/tombedor/llm-tools-recall-kit"
+Changelog = "https://github.com/tombedor/llm-tools-recall-kit/releases"
+Issues = "https://github.com/tombedor/llm-tools-recall-kit/issues"
+CI = "https://github.com/tombedor/llm-tools-recall-kit/actions"
+
+[project.entry-points.llm]
+llm_tools_recall_kit = "llm_tools_recall_kit"
+
+[project.optional-dependencies]
+test = ["pytest", "llm-echo>=0.3a1"]
